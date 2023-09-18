@@ -8,6 +8,12 @@ public class Turista {
     Turista(String _nome){
         this.nome = _nome;
     }
+    //Mais uma sobrecarga do construtor
+    Turista(String _nome, String _cpf) {
+        this.nome = _nome;
+        this.cpf = _cpf;
+    }
+
     // Métodos
     public String viajar(){
         return "Viajou!!!";
