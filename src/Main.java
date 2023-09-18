@@ -16,9 +16,14 @@ public class Main {
         //Atribuição Dinâmica
         String nome = JOptionPane.
                 showInputDialog("Entre com o nome da pessoa Turista: ");
-
+//Criaçãp do objeto do tipo Turista
         Turista pessoaTurista = new Turista(nome);
         //Saida de dados - nome armazenado acima
         System.out.println(pessoaTurista.getNome());
+        //Pedir cpf e mostrar
+        String cpf = JOptionPane.showInputDialog("Entre com cpf:");
+        //Adicionar cpf na pessoaTurista
+        pessoaTurista.setCpf(cpf);
+        System.out.println(pessoaTurista.getCpf());
     }
 }
